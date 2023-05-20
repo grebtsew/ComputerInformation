@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  ComputerInformation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./target:/app
