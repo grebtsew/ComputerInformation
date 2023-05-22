@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Build the project
-RUN msbuild /p:Configuration=Release
+RUN msbuild ./ComputerInformation/ComputerInformation/ComputerInformation.sln /p:Configuration=Release
 
 # Copy the build output to the /app folder
 RUN xcopy /y /s /e bin\Release\*.* /app
