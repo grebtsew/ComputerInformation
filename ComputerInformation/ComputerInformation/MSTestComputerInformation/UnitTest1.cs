@@ -5,10 +5,11 @@ using ComputerInformation;
 namespace MSTestComputerInformation
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTests
     {
+       
         [TestMethod]
-        public void TestMethod1()
+        public void TestFormLoad()
         {
 
             // Act
