@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  ComputerInformation:
+  computer_information:
     build:
       context: .
       dockerfile: Dockerfile
