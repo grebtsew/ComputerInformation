@@ -7,8 +7,10 @@ WORKDIR /app
 # Copy the project files to the container
 COPY . .
 
+RUN nuget restore ComputerInformation/ComputerInformation/ComputerInformation.sln
+
 # Build the project
-RUN msbuild ./ComputerInformation/ComputerInformation/ComputerInformation.sln /p:Configuration=Release
+RUN msbuild /app/ComputerInformation/ComputerInformation/ComputerInformation.sln /p:Configuration=Release
 
 # Copy the build output to the /app folder
 RUN xcopy /y /s /e bin\Release\*.* /app

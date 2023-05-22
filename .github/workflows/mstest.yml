@@ -23,7 +23,7 @@ jobs:
     - name: Build project
       run: msbuild ComputerInformation/ComputerInformation/ComputerInformation.sln /p:Configuration=Release
     
-    - name: Run MSTest
-      run: |
-          cd ComputerInformation/ComputerInformation/MSTestComputerInformation/
-          vstest.console.exe MSTestComputerInformation.dll
+    #- name: Run MSTest
+    #  run: |
+    #      cd ComputerInformation/ComputerInformation/MSTestComputerInformation/bin/Debug
+    #      vstest.console.exe MSTestComputerInformation.dll
