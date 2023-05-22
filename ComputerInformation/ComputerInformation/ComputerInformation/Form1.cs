@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Management;
 using System.Net.NetworkInformation;
@@ -308,18 +305,16 @@ namespace ComputerInformation
             sb.AppendLine(" ");
             foreach (ManagementObject obj in searcher.Get())
             {
-
                 //Device name 
                 try
                 {
-                    string s = string.IsNullOrEmpty(obj.GetPropertyValue("DeviceName").ToString()) ? string.Empty : obj.GetPropertyValue("DeviceName").ToString();
-
+                    string s = $"{obj.GetPropertyValue("DeviceName")?.ToString() ?? "Unknown"}";
                     if (s != null)
                     {
                         sb.AppendLine(s);
                     }
                 }
-                catch { }
+                catch  { }
             }
             richTextBox5.Text = sb.ToString();
         }

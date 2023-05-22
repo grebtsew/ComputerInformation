@@ -229,3 +229,41 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.bak
+*.cache
+*.dll
+*.exe
+*.pdb
+*.ipch/
+*.obj/
+*.pch/
+*.res/
+*.sbr/
+*.tlb/
+*.tlh/
+*.tmp/
+*.log/
+*.bin/
+*.dat/
+*.aps/
+*.pch/
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.opendb
+*.sdf
+*.sln.docstates
+*.bak
+*.VC.db
+*.VC.opendb
+
+./target
+/target
+target
