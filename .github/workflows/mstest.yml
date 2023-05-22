@@ -18,10 +18,10 @@ jobs:
     #  uses: microsoft/setup-dotnet-framework@v1
     
     - name: Restore NuGet packages
-      run: nuget restore
+      run: nuget restore ComputerInformation/ComputerInformation/ComputerInformation.sln
     
     - name: Build project
-      run: msbuild /p:Configuration=Release
+      run: msbuild ComputerInformation/ComputerInformation/ComputerInformation.sln /p:Configuration=Release
     
     - name: Run MSTest
       run: |
