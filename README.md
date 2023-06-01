@@ -1,6 +1,6 @@
 # Computer Information
 
-While debugging and solving computer related issues it is common to require information about the problematic device. Much of the information can be gathered using functions such as dxdiag, msconfig and poolmonish. This Windows Form application utilizes these functions to gather data about the system and present them in one place.Showing information about your system in different tabs. See image below for demonstration.
+While debugging and solving computer related issues it is common to require information about the problematic device. Much of the information can be gathered using functions such as dxdiag, msconfig and poolmonish. This Windows Form application utilizes these functions to gather data about the system and present them in one place. Showing information about your system in different tabs. See image below for demonstration.
 
 
 ![license](https://img.shields.io/github/license/grebtsew/Overleaf-LaTeX-Compiler)
